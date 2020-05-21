@@ -1,0 +1,270 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: white;
+}
+.body {
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+
+#header {
+  position: fixed;
+  top: 0;
+  min-height: 5%;
+ background: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: inherit;
+  max-width: inherit;
+  
+}
+.lista {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width:100%; 
+  justify-content: space-between;
+ 
+}
+#nav-bar{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;    
+    width: 100%;  
+      
+}
+.menunav {
+    
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-img {
+  width: 30%;
+  
+}
+.menunav ul li a {
+  font-size: 22px;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+   
+  
+}
+.menunav ul li a:hover {
+  color: rgb(245, 153, 153);
+}
+
+#tienda {
+  color: rgb(46, 36, 22);
+  background-image: url(./imagenes/formulario.jpg);
+  background-size: cover;
+  
+  padding-top: 30%;
+  text-align: center;
+ 
+}
+.agenda p {
+  font-size: 40px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+}
+
+#dropdown,
+#email {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#submit {
+  padding: 10px 20px;
+  background: rgb(194, 187, 187);
+  color: white;
+  background: rgb(153, 154, 177);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+#submit:hover {
+  background: rgb(246, 145, 145);
+}
+.cel {
+  padding: 20px;
+  font-size: 15px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#Cursos {
+  text-align: center;
+  padding-top: 80px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.img-curso {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  
+
+}
+
+#Quiensoy {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 50px;
+}
+
+#Quiensoy p {
+  text-align: justify;
+  line-height: 30px;
+}
+
+.texth2 {
+  font-size: 40px;
+}
+
+.video {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#Portafolio {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#Portafolio img {
+  border: solid 1px black;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.listaredes ul li a {
+  text-decoration: none;
+  color: rgb(250, 186, 178);
+  padding: 10px;
+}
+
+.listaredes ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  
+  
+}
+.textfooter {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background: black;
+    font-size: 12px;
+    
+}
+
+fieldset { background-image: url(./imagenes/footer.jpg);
+    background-size: cover;
+}
+
+@media (max-width: 920px) {
+  
+  .img-curso{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+   
+   }
+   .img-curso img {
+     width: 70%;
+     margin: 20px;
+     height: auto;
+   }
+
+   #video {
+     width: 400px;
+     border-radius: 10px;
+   }
+}
+
+
+@media (max-width: 750px) {
+  .body {
+    
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+  }
+  .lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width:100%; 
+    align-items: flex-end;
+   
+  }
+  .agenda p {
+    font-size: 30px;
+    color: white;
+    padding-top: 30px;    
+  }
+  #form {
+   display:flex ;
+   flex-direction: column;   
+   margin: 20px;
+   
+  }
+  #dropdown,
+#email {
+  margin: 10px; 
+}
+
+#submit {
+  margin: 10px; 
+  background: rgb(194, 194, 204); 
+  
+}
+
+
+#Quiensoy p{
+  padding: 20px;
+}
+
+#Portafolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+#Portafolio img {
+  width: 80%;
+  margin: 10px;
+  
+}
+
+}
